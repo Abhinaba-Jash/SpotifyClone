@@ -1,0 +1,19 @@
+.display-flex{
+    display: flex;
+}
+.realtive{
+    position: relative;
+}
+.border-1{
+    border-radius: 4px;
+}
+.color-pink{
+    color: #EE10B0;
+}
+.color-blue{
+    color: #0E9EEF;
+}
+
+.hover{
+    cursor: pointer;
+}

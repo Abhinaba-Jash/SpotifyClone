@@ -1,0 +1,259 @@
+<!-- TODO: Implementing Favourite section and Create new playlist section will be implemented after learning databased actually backend -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpotifyClone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main display-flex">
+        <div class="left display-flex">
+          <div class="header display-flex">
+            <img
+              id="left-logo"
+              width="110px"
+              src="assets/images/logo.png"
+              alt="logo"
+            />
+            <img
+              class="hover"
+              id="left-cross"
+              width="25px"
+              src="assets/images/x.png"
+              alt="icon"
+            />
+          </div>
+          <div class="menu">
+            <span class="color-pink">Menu</span>
+            <ul>
+              <li id="left-home" class="hover">
+                <img
+                  id="left-home"
+                  width="155px"
+                  src="assets/images/home.png"
+                  alt=""
+                />
+              </li>
+              <li id="left-playlist" class="display-flex hover">
+                <img width="45px" src="assets/images/menu-add.png" alt="icon" />
+                <span class="color-blue">Add Playlist</span>
+              </li>
+            </ul>
+          </div>
+          <div class="songs">
+            <span class="color-pink">Up next</span>
+            <div class="songs-cards">
+             
+            </div>
+          </div>
+        </div>
+        <div class="right display-flex">
+          <div class="right-header display-flex">
+            <img
+              class="hover"
+              height="18px"
+              width="22px"
+              id="hemburger-icon"
+              src="assets/images/hemburger.png"
+              alt="icon"
+            />
+            <img
+              id="right-logo"
+              height="30px"
+              width="115px"
+              src="assets/images/logo.png"
+              alt=""
+            />
+            <ul class="display-flex">
+              <li class="hover">
+                <a href="#controls-container" class="nav-link">Player</a>
+              </li>
+              <li class="hover nav-link">
+                <a href="#footer-container" class="nav-link">About</a>
+              </li>
+              <li class="hover nav-link">
+                <a href="#footer-container" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-container">
+            <div class="container">
+              <span class="right-container-heading"
+                >Top <span class="color-pink">Songs</span></span
+              >
+              <div class="playlist-cards display-flex"></div>
+            </div>
+            <div class="container">
+              <span class="right-container-heading"
+                >Your <span class="color-pink">Playlists</span></span
+              >
+              <div class="your-playlist-cards display-flex">
+                <div class="card">
+                  <img src="assets/images/image1.png" alt="" />
+                  <div class="card-content display-flex">
+                    <span id="playlist-title"> Top 50 Drive hits </span>
+                    <img src="assets/images/play.png" alt="" srcset="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/images/image1.png" alt="" />
+                  <div class="card-content display-flex">
+                    <span id="playlist-title"> Top 50 Drive hits </span>
+                    <img src="assets/images/play.png" alt="" srcset="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/images/image1.png" alt="" />
+                  <div class="card-content display-flex">
+                    <span id="playlist-title"> Top 50 Drive hits </span>
+                    <img src="assets/images/play.png" alt="" srcset="" />
+                  </div>
+                </div>
+                <div class="add-your-playlist-card display-flex">
+                  <img
+                    class="hover"
+                    width="55px"
+                    height="55px"
+                    src="assets/images/playlist-add.png"
+                    alt="icon"
+                  />
+                  <span>Add Playlist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="controls-container" class="controls-container display-flex">
+            <div class="upper display-flex">
+              <div class="section1 display-flex">
+                <img
+                  id="volume-btn"
+                  width="20px"
+                  src="assets/images/volume.png"
+                  alt="icon"
+                />
+                <div class="volume-seekbar relative display-flex">
+                  <img id="volume-line"
+                    height="2px"
+                    width="55px"
+                    src="assets/images/line.png"
+                    alt=""
+                  />
+                  <img
+                    id="volume-circle"
+                    height="9px"
+                    width="9px"
+                    src="assets/images/circle.png"
+                    alt="icon"
+                  />
+                </div>
+              </div>
+              <div class="section2 display-flex">
+                <img
+                  id="loop-btn"
+                  width="25px"
+                  height="25px"
+                  src="assets/images/loop.png"
+                  alt=""
+                />
+                <img
+                  id="previous-btn"
+                  width="35px"
+                  height="35px"
+                  src="assets/images/previous.png"
+                  alt=""
+                />
+                <img
+                  id="play-btn"
+                  width="45px"
+                  height="45px"
+                  src="assets/images/play.png"
+                  alt=""
+                />
+                <img
+                  id="next-btn"
+                  width="35px"
+                  height="35px"
+                  src="assets/images/next.png"
+                  alt=""
+                />
+              </div>
+              <div class="section3 display-flex">
+                <img
+                  id="favourite-btn"
+                  width="25px"
+                  height="25px"
+                  src="assets/images/heart.png"
+                  alt="icon"
+                />
+                <span id="control-time-stamp">00:00/00:00</span>
+              </div>
+            </div>
+            <div class="lower display-flex">
+              <div class="seekbar display-flex">
+                <img
+                  width="18px"
+                  id="seekbar-circle"
+                  src="assets/images/circle.png"
+                  alt=""
+                />
+                <img id="seekbar-line"
+                  width="100%"
+                  height="4px"
+                  src="assets/images/line.png"
+                  alt=""
+                />
+              </div>
+              <span id="controls-song-name">----------</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-container" class="footer-container display-flex">
+        <div class="about display-flex">
+          <span>About</span>
+          <p>
+            Melodies is a website that has been created for over 5 year’s now
+            and it is one of the most famous music player website’s in the
+            world. in this website you can listen and download songs for free.
+            also of you want no limitation you can buy our premium pass’s.
+          </p>
+        </div>
+        <div class="contact display-flex">
+          <span>Contact</span>
+          <img height="4px" width="85px" src="assets/images/line.png" alt="" />
+          <ul class="display-flex">
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-icons display-flex">
+          <img
+            class="hover"
+            height="25px"
+            width="25px"
+            src="assets/images/insta.png"
+            alt="icon"
+          />
+          <img
+            class="hover"
+            height="25px"
+            width="25px"
+            src="assets/images/linkedin.svg"
+            alt="icon"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
